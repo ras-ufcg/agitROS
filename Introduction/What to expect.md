@@ -11,7 +11,7 @@ The goal of this book is to provide an integrated overview of the concepts and t
 The figure below shows the organization of the book. Chapters are shown as rectangles; arrows show the major dependencies between them. It should be fairly reasonable to read this book in any order that follows those constraints.
 
 <p align="center">
-  <img src="./pics/1.1.png" width="400"/>
+  <img src="https://user-images.githubusercontent.com/48807586/119573892-41faee80-bd8b-11eb-9bdd-b14df7567b06.png" width="400"/>
 </p>
 
 ## Intended audience
