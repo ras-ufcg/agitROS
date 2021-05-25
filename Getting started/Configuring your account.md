@@ -14,7 +14,7 @@ This command stores some files in your home directory, in a subdirectory called 
 
 ## Setting environment variables
 
-ROS relies on a few environment variables to locate the files it needs. To set these environment variables, you’ll need to execute the [`setup.bash` script](http://wiki.ros.org/rosbash) that ROS provides, using this command:
+ROS relies on a few environment variables to locate the files it needs. To set these environment variables, you'll need to execute the [`setup.bash` script](http://wiki.ros.org/rosbash) that ROS provides, using this command:
 ```
 source /opt/ros/indigo/setup.bash
 ```
@@ -27,8 +27,8 @@ If everything has worked correctly, you should see a handful of values (showing 
 
 > :warning: If you get “command not found” errors from the ROS commands introduced later in this chapter, the most likely reason is that `setup.bash` has not been run in your current shell.
 
-Note, however, that the steps listed above apply only to the current shell. It would work perfectly well to simply execute that `source` command each time you start a new shell in which you’d like to execute ROS commands. However, this is both annoying and remarkably easy to forget, especially when you consider that the modular design of many ROS systems often calls for several different commands to execute concurrently, each in a separate terminal.
+Note, however, that the steps listed above apply only to the current shell. It would work perfectly well to simply execute that `source` command each time you start a new shell in which you'd like to execute ROS commands. However, this is both annoying and remarkably easy to forget, especially when you consider that the modular design of many ROS systems often calls for several different commands to execute concurrently, each in a separate terminal.
 
-Thus, you’ll want to configure your account to run the `setup.bash` script automatically, each time you start a new shell. To do this, edit the file named `.bashrc` in your home directory, and put the above `source` command at the bottom.
+Thus, you'll want to configure your account to run the `setup.bash` script automatically, each time you start a new shell. To do this, edit the file named `.bashrc` in your home directory, and put the above `source` command at the bottom.
 
 > :fast_forward: In addition to setting environment variables, this `setup.bash` script also defines `bash` functions to implement a few commands, including `roscd` and `rosls`, which are introduced below. These functions are defined in the [`rosbash` package](http://wiki.ros.org/rosbash).
