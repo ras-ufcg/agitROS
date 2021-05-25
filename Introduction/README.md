@@ -1,3 +1,3 @@
-# Introduction
+# Introdução
 
-*In which we introduce ROS, describe how it can be useful, and preview the remainder of the book.*
+*Nesse capítulo nós introduziremos ROS, descreveremos como ele é útil e mostraremos como será o restante do livro.*
