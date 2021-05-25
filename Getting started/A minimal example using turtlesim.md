@@ -21,7 +21,7 @@ The separate terminals are intended to allow all three commands to execute simul
   <img src="https://user-images.githubusercontent.com/48807586/119573772-1aa42180-bd8b-11eb-9abd-dc838b6f7c53.png" width="400"/>
 </p>
 
-This window shows a simulated, turtle-shaped robot that lives in a square world. (The appearance of your turtle may differ. The simulator selects from a collection of “mascot” turtles for each of the historical distributions of ROS.) If you give your third terminal (the one executing the `turtle_teleop_key` command) the input focus and press the `Up ↑`, `Down ↓`, `Left ←`, or `Right →` keys, the turtle will move in response to your
+This window shows a simulated, turtle-shaped robot that lives in a square world. (The appearance of your turtle may differ. The simulator selects from a collection of “mascot” turtles for each of the historical distributions of ROS.) If you give your third terminal (the one executing the `turtle_teleop_key` command) the input focus and press the <kbd>Up ↑</kbd>, <kbd>Down ↓</kbd>, <kbd>Left ←</kbd>, or <kbd>Right →</kbd> keys, the turtle will move in response to your
 commands, leaving a trail behind it.
 
 > :warning: If the turtle does not move in response to your key presses, make sure that the `turtle_teleop_key` window has the input focus, for example by clicking inside it. You may need to arrange the windows carefully to focus this terminal while the simulation window is still visible.
