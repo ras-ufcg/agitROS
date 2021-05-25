@@ -1,3 +1,33 @@
 # A minimal example using turtlesim
 
 Before we begin to examine the details of how ROS works, let’s start with an example. This quick exercise will serve a few different purposes: It will help you confirm that ROS is installed correctly, it will introduce the [`turtlesim` simulator](http://wiki.ros.org/turtlesim) that is used in many online tutorials and throughout this book, and it will provide a working (albeit quite simple) system that we’ll refer back to in the rest of this chapter.
+
+## Starting `turtlesim`
+
+In three separate terminals, execute these three commands: 
+```
+roscore
+```
+```
+rosrun turtlesim turtlesim_node
+```
+```
+rosrun turtlesim turtle_teleop_key
+```
+
+The separate terminals are intended to allow all three commands to execute simultaneously. If everything works correctly, you should see a graphical window similar to the left part of the figure below. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/48807586/119573772-1aa42180-bd8b-11eb-9abd-dc838b6f7c53.png" width="400"/>
+</p>
+
+This window shows a simulated, turtle-shaped robot that lives in a square world. (The appearance of your turtle may differ. The simulator selects from a collection of “mascot” turtles for each of the historical distributions of ROS.) If you give your third terminal (the one executing the `turtle_teleop_key` command) the input focus and press the `Up ↑`, `Down ↓`, `Left ←`, or `Right →` keys, the turtle will move in response to your
+commands, leaving a trail behind it.
+
+> :warning: If the turtle does not move in response to your key presses, make sure that the `turtle_teleop_key` window has the input focus, for example by clicking inside it. You may need to arrange the windows carefully to focus this terminal while the simulation window is still visible.
+
+Making virtual turtles draw lines is not, in itself, particularly exciting<sup>1</sup>. However, this example already has enough happening behind the scenes to illustrate many of the main ideas on which more interesting ROS systems are based. You should keep these three terminals open, because the examples in the following sections will show some additional ways to interact with this system.
+
+---
+
+<sup>1</sup> The author, for example, first started making turtles draw on computer screens sometime around 1987.
