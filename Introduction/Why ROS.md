@@ -26,35 +26,36 @@ The common thread through all of these cases is a need for communication between
 simple, seamless mechanisms for this kind of communication. We'll discuss the details in
 Chapters 3 and 8.
 
-## Software reuse 
+## Reusabilidade de *software*
 
-The rapid progress of robotics research has resulted in a growing collection of good algorithms for common tasks such as navigation, motion planning, mapping, and many others. Of course, the existence of these algorithms is only truly useful if there is a way to apply them in new contexts, without the need to reimplement each algorithm for each new system. ROS can help to prevent this kind of pain in at least two important ways.
+O rápido progresso de pesquisas na área de robótica resultou no crescimento de um conjunto de bons algoritmos para tarefas recorrentes como navegação, planejamento de trajetória, mapeamento e muitas outras. Evidentemente, a existência destes algoritmos só é verdadeiramente útil se há uma maneira de aplicá-los em novos contextos, sem a necessidade de reimplementá-los a cada novo sistema. O ROS pode ajudar na prevenção deste tipo de problema em pelo menos duas maneiras. 
 
-- ROS's standard packages provide stable, debugged implementations of many important robotics algorithms.
-- ROS's message passing interface is becoming a de facto standard for robot software interoperability, which means that ROS interfaces to both the latest hardware and to implementations of cutting edge algorithms are quite often available. For example, the ROS website lists hundreds of publicly-available [ROS packages](http://www.ros.org/browse). This sort of uniform interface greatly reduces the need to write "glue" code to connect existing parts
+- Os pacotes padrão do ROS provêem implementações estáveis e depuradas de muitos algoritmos importantes na área de robótica.
+- A *message passing interface* do ROS está se tornando uma referência na interoperabilidade de *softwares* robóticos, o que significa que o ROS é quase sempre compatível com os *hardwares* mais recentes e com algoritmos de ponta. Por exemplo, o *website* do ROS lista centenas de [pacotes ROS](http://www.ros.org/browse) de domínio público. Este tipo de compatibilidade reduz significativamente a necessidade de escrever códigos extras para conectar partes já existentes. 
 
-As a result, developers that use ROS can expect — after, of course, climbing ROS's initial learning curve — to focus more time on experimenting with new ideas, and less time reinventing wheels.
+Como resultado, os desenvolvedores que utilizam o ROS podem esperar - após, claro, percorrerem a curva de aprendizagem inicial da ferramenta - aplicar mais tempo na experimentação de novas ideias, e menos tempo reinventando a roda. 
 
-## Rapid testing
 
-One of the reasons that software development for robots is often more challenging than other kinds of development is that testing can be time consuming and error-prone. Physical robots may not always be available to work with, and when they are, the process is sometimes slow and finicky. Working with ROS provides two effective workarounds to this problem.
+## Testagem rápida
 
-- Well-designed ROS systems separate the low-level direct control of the hardware and high-level processing and decision making into separate programs. Because of this separation, we can temporarily replace those low-level programs (and their corresponding hardware) with a simulator, to test the behavior of the high-level part of the system.
-- ROS also provides a simple way to record and play back sensor data and other kinds of messages. This facility means that we can obtain more leverage from the time we do spend operating a physical robot. By recording the robot's sensor data, we can replay it many times to test different ways of processing that same data. In ROS parlance, these recordings are called "bags" and a tool called rosbag is used to record and replay them. See Chapter 9.
+Uma das razões pelas quais o desenvolvimento de software para robótica é ainda mais desafiador do que outros tipos de desenvolvimento é que a testagem pode ser demorada e sujeita a erros. Robôs físicos nem sempre estão disponíveis para experimentações, e quando estão, o processo pode ser lento e minucioso. Trabalhar com o ROS provê duas alternativas efetivas para este problema. 
 
-A crucial point for both of these features is that the change is seamless. Because the real robot, the simulator, and the bag playback mechanism can all provide identical (or at least very similar) interfaces, your software does not need to be modified to operate in these distinct scenarios, and indeed need not even "know" whether it is talking to a real robot or to something else.
+- Sistemas ROS bem projetados separam o controle direto de baixo-nível do *hardware* e o processamento de alto-nível e de tomada de decisões em programas distintos. Devido a essa separação, podemos substituir temporariamente estes programas de baixo-nível (e o *hardware* correspondente) com um simulador, para testar o comportamento da parte alto-nível do sistema. 
+- O ROS também fornece uma maneira simples de gravar e reproduzir dados de sensores e outros tipos de mensagens. Este recurso significa que podemos potencializar o tempo empregado na operação de um robô físico. Ao gravar os dados dos sensores do robô, podemos reproduzi-los inúmeras vezes de modo a testar maneiras diferentes de processar os mesmos dados. No linguajar ROS, estas gravações são chamadas de “bags” e uma ferramenta chamada rosbag é usada para gravá-las e reproduzi-las. Veja o capítulo 9. 
 
-Of course, ROS is not the only platform that offers these capabilities. What is unique about ROS, at least in the author's judgment, is the level of widespread support for ROS across the robotics community. This "critical mass" of support makes it reasonable to predict that ROS will continue to evolve, expand, and improve in the future.
+Um ponto crucial destas duas funcionalidades é que a mudança é suave. Pelo fato do robô real, o simulador e o mecanismo de reprodução "bag" proverem interfaces idênticas (ou pelo menos muito semelhantes), seus programas não precisam ser modificados para operar nesses cenários distintos, e de fato nem precisam “saber” se a comunicação se dá com um robô real ou com qualquer outra coisa. 
 
-## ROS is not...
+Obviamente, o ROS não é a única plataforma que oferece estas capacidades. O que é único a respeito do ROS é, pelo menos na visão do autor, o nível de suporte difundido na comunidade de robótica. Esta “massa crítica” de suporte torna razoável a previsão de uma contínua evolução, expansão e melhoramento do ROS no futuro. 
 
-Finally, let's take a moment to review a few things that are not true about ROS.
+## O ROS não é…
 
-- *ROS is not a programming language*. In fact, ROS programs are routinely written in [C++](http://wiki.ros.org/roscpp), and this book has some explicit instructions on how to do that. Client libraries are also available for [Python](http://wiki.ros.org/rospy), [Java](http://wiki.ros.org/rosjava), [Lisp](http://wiki.ros.org/roslisp), and a handful of other [languages](http://wiki.ros.org/Client%20Libraries).
-- *ROS is not (only) a library* . Although ROS does include client libraries, it also includes (among other things), a central server, a set of command-line tools, a set of graphical tools, and a build system.
-- *ROS is not an integrated development environment*. Although ROS does not prescribe any particular development environment, it can be used with most popular [IDEs](http://wiki.ros.org/IDEs). It is also quite reasonable (and, indeed, it is the author's personal preference) to use ROS from a text editor and the command line, without any IDE.
+Por fim, vamos reservar um tempo para rever algumas coisas que não são verdade sobre o ROS. 
+
+- *ROS não é uma linguagem de programação*. Na verdade, os programas ROS são normalmente escritos em [C++](http://wiki.ros.org/roscpp), e este livro tem algumas instruções explícitas de como fazer isso. Bibliotecas cliente também são disponibilizadas para [Python](http://wiki.ros.org/rospy), [Java](http://wiki.ros.org/rosjava), [Lisp](http://wiki.ros.org/roslisp), e um punhado de outras [linguagens](http://wiki.ros.org/Client%20Libraries).
+- *ROS não é (somente) uma biblioteca*. Apesar do ROS incluir bibliotecas cliente, ele também inclui (entre outras coisas), um servidor central, um conjunto de ferramentas de linha-de-comando, um conjunto de ferramentas gráficas, e um *build system*.
+- *ROS não é um ambiente de desenvolvimento integrado*. Muito embora o ROS não prescreva qualquer ambiente de desenvolvimento específico, ele pode ser usado com as [IDEs](http://wiki.ros.org/IDEs) mais populares. É bem compreensível (e, de fato, esta é a preferência pessoal do autor) usar o ROS a partir de um editor de texto e por meio de linhas de comando, sem qualquer IDE.
+
 
 ---
 
-<sup>1</sup> When spoken aloud, the name "ROS" is nearly always pronounced as a single word that rhymes with
-"moss," and almost never spelled out "arrr-oh-ess."
+<sup>1</sup> Quando dito em voz alta, o nome “ROS” é quase sempre pronunciado como uma única palavra que rima com “moss”, e quase nunca soletrado como “Érre-ó-ésse”.
