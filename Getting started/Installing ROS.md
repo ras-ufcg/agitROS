@@ -1,38 +1,37 @@
-# Installing ROS
+# Instalando o ROS
 
-Before you can do anything with ROS, naturally you must ensure that it is installed on your computer. (If you are working with a computer on which someone else has already
-installed ROS — including the `ros-indigo-turtlesim`package — you can skip directly to next section). The installation process is [well documented](http://wiki.ros.org/ROS/Installation) and mostly straightforward. Here's a summary of the necessary steps.
+Antes de fazer qualquer coisa com o ROS, você deve se certificar que ele está instalado no seu computador. (Se você está trabalhando em um computador no qual outra pessoa já instalou o ROS — incluindo o pacote `ros-indigo-turtlesim` — você pode pular para a próxima seção). O processo de instalação é [bem documentado](http://wiki.ros.org/ROS/Installation) e é bastante direto. Aqui está um resumo dos passos necessários.
 
-## Adding the ROS repository 
+## Adicionando o repositório do ROS 
 
-As root, create a file called
+Como superusuário, crie um arquivo chamado
 ```
 /etc/apt/sources.list.d/ros-latest.list
 ```
-containing a single line:
+contendo uma única linha:
 ```
 deb http://packages.ros.org/ros/ubuntu trusty main
 ```
 
-> :warning: This line is specific to Ubuntu 14.04, whose codename is `trusty`. If you are using Ubuntu 13.10 instead, you can substitute `saucy` for `trusty`.
->> :fast_forward: Other versions of Ubuntu — both older and and newer — are not supported by the pre-compiled packages for the `indigo` distribution of ROS. However, for Ubuntu versions newer than 14.04, [installing ROS from its source](http://wiki.ros.org/indigo/Installation/Source) may be a reasonable option.
-> If you are unsure of which Ubuntu version you're using, you can find out using this command:
+> :warning: Esta linha específica para Ubuntu 14.04, cujo codinome é `trusty`. Se você estiver utilizando o Ubuntu 13.10, você pode substituir `saucy` por `trusty`.
+>> :fast_forward: Outras versões do Ubuntu — mais antigas ou mais recentes — não são suportadas por pacotes pré-compilados para a distribuição `indigo` do ROS. Entretanto, para versões do Ubuntu mais recentes que 14.04, [instalando ROS de sua fonte](http://wiki.ros.org/indigo/Installation/Source) pode ser uma opção razoável.
+> Se você não tem certeza sobre qual versão do Ubuntu está usando, pode descobrir utilizando este comando:
 > ``` 
 > lsb_release -a
 > ```
-> The output should show both a codename and a release number.
+> A saída deve mostrar o codinome e número de lançamento.
 
-## Installing the package authentication key
+## Instalando a chave de autenticação do pacote
 
-Before installing the ROS packages, you must acquire their package authentication key. First, download the key:
+Antes de instalar os pacotes do ROS, você deve obter a chave de autenticação do pacote. Primeiro, faça o download da chave:
 ```
 wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key
 ```
-If this works correctly, you'll have a small binary file called `ros.key`. Next, you should configure the `apt` package management system to use this key:
+Se funcionar corretamente, você terá um pequeno arquivo binário chamado `ros.key`. Depois, você deve configurar o sistema de gerenciamento de pacotes `apt` para usar esta chave:
 ```
 sudo apt-key add ros.key
 ```
-After completing this step (`apt-key` should say `OK`), you can safely delete `ros.key`.
+Depois de completar este passo, (`apt-key` deve dizer `OK`), você pode excluir `ros.key` com segurança.
 
 ## Downloading the package lists
 
