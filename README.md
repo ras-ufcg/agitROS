@@ -2,13 +2,13 @@
 
 This repository stores the translation file of the book ["A Gentle Introduction to ROS"](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf) of Jason O'Kane. We will translate it to Portuguese (Brasil).
 
-## Translation Team
+# Translation Team
 
 Still to add
 * name1
 * name2
 
-### How the Translation was made and what do you need to do it?
+# How the Translation was made and what do you need to do it?
 
 The "Academy Translate" aims to bring Robotics educational material to Portuguese, because most of the material is made in English. We aim to facilitate the study of begginers in robotics translating this free material from the professor Peter Corke.
 
