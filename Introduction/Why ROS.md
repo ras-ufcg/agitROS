@@ -1,30 +1,27 @@
-# Why ROS?
+# Por que ROS?
 
-The robotics community has made impressive progress in recent years. Reliable and inexpensive robot hardware  ——from land-based mobile robots, to quadrotor helicopters, to humanoids — is more widely available than ever before. Perhaps even more impressively, the community has also developed algorithms that help those robots run with increasing levels of autonomy.
+A comunidade de robótica tem feito um progresso expressivo nos últimos anos. Hardwares robóticos baratos e de confiança — desde robôs móveis terrestres, drone quadrimotores, a humanóides — estão muito mais acessíveis do que anos atrás. Talvez o que seja ainda mais impressionante, é como a comunidade também tem desenvolvido algoritmos que ajudam esses robôs a operarem com níveis crescentes de autonomia.
 
-In spite of (or, some might argue, because of ) this rapid progress, robots do still present
-some significant challenges for software developers. This book introduces a software platform called **Robot Operating System**, or **ROS**,<sup>1</sup> that is intended to ease some of these difficulties. The [official description of ROS](http://wiki.ros.org/ROS/Introduction) is:
+Apesar desse rápido progresso (ou, alguns podem argumentar, por causa dele), os robôs ainda apresentam alguns desafios significativos para os desenvolvedores de software. Este livro introduz uma plataforma de software chamada **Robot Operating System**, ou **ROS**,<sup>1</sup> cujo objetivo é facilitar algumas dessas dificuldades. A [descrição oficial de ROS](http://wiki.ros.org/ROS/Introduction) é:
 
-> ROS is an open-source, meta-operating system for your robot. It provides the 
-> services you would expect from an operating system, including hardware abstraction,
-> low-level device control, implementation of commonly-used functionality, message-passing
-> between processes, and package management. It also provides tools and libraries for
-> obtaining, building, writing, and running code across multiple computers.
+> ROS é um sistema open-source (código aberto), meta-operacional para o seu robô. Ele provê os
+> serviços que você esperaria de um sistema operacional, incluindo abstrações de hardware,
+> controle de dispositivos de baixo nível, implementação de funcionalidades comumente usadas, passagem (troca) de mensagens
+> entre processos, e gestão de pacotes. Também fornece ferramentas e bibliotecas para
+> obter, construir, escrever e rodar códigos através de múltiplos computadores.
 
-This description is accurate — and it correctly emphasizes that ROS does not replace, but instead works alongside a traditional operating system — but it may leave you wondering what the real advantages are for software that uses ROS. After all, learning to use a new framework, particularly one as complex and diverse as ROS, can take quite a lot of time and mental energy, so one should be certain that the investment will be worthwhile. Here are a few specific issues in the development of software for robots that ROS can help to resolve.
+Essa descrição é precisa — e enfatiza corretamente que o ROS não substitui, mas, ao invés disso, trabalha lado a lado com um sistema operacional tradicional — mas pode te levar a imaginar quais são as reais vantagens para o software que usa o ROS. Afinal de contas, aprender a utilizar um novo framework, particulamente um tão complexo e diverso quanto ROS, pode levar um pouco de tempo e energia mental, então é melhor ter certeza de que o investimento valerá a pena. Aqui estão alguns problemas específicos em desenvolver softwares para robôs que o ROS pode ajudar a resolver.
 
-## Distributed computation 
+## Computação Distribuída
 
-Many modern robot systems rely on software that spans many different processes and runs across several different computers. For example:
+Muitos sistemas de robôs modernos dependem de softwares que abrangem diferentes processos e rodam através de vários computadores diferentes. Por exemplo:
 
-- Some robots carry multiple computers, each of which controls a subset of the robot's sensors or actuators.
-- Even within a single computer, it's often a good idea to divide the robot's software into small, stand-alone parts that cooperate to achieve the overall goal. This approach is sometimes called "complexity via composition."
-- When multiple robots attempt to cooperate on a shared task, they often need to communicate with one another to coordinate their efforts.
-- Human users often send commands to a robot from a laptop, a desktop computer, or mobile device. We can think of this human interface as an extension of the robot's software.
+- Alguns robôs carregam múltiplos computadores, cada um com o controle de uma sub-seção dos atuadores ou sensores do robô.
+- Mesmo com um único computador, muitas vezes é uma boa ideia dividir o software do robô em partes pequenas e autonômas que cooperam para atingir o objetivo geral. Essa abordagem pode ser chamada de "complexidade via composição".
+- Quando múltiplos robôs tentam cooperar numa tarefa compartilhada, eles, muitas vezes, tem uma necessidade de se comunicar uns com os outros para coordenar seus esforços.
+- Usuários humanos geralmente mandam comandos para o robô de um laptop, um computador desktop, ou um dispositivo móvel. Nós podemos pensar nessa interface humana como sendo uma extensão do software do robô.
 
-The common thread through all of these cases is a need for communication between multiple processes that may or may not live on the same computer. ROS provides two relatively
-simple, seamless mechanisms for this kind of communication. We'll discuss the details in
-Chapters 3 and 8.
+A discussão comum entre todos esses casos é a necessidade de uma comunicação entre múltiplos processos que podem, ou não, estar no mesmo computador. O ROS provê dois mecanismos relativamente simples e contínuos para esse tipo de comunicação. Nós iremos discutir os detalhes nos capítulos 3 e 8.
 
 ## Reusabilidade de *software*
 
