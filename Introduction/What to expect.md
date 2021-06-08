@@ -1,25 +1,27 @@
-# What to expect
+# O que esperar
 
-The goal of this book is to provide an integrated overview of the concepts and techniques you'll need to know to write ROS software. This goal places a few important constraints on the content of the book.
+O objetivo deste livro é fornecer uma visão geral integrada dos conceitos e técnicas que você precisará conhecer para escrever o software ROS. Esse objetivo coloca algumas restrições importantes ao conteúdo do livro.
 
-- *This is not an introduction to programming*. We won't discuss basic programming concepts in any great detail. This book assumes that you've studied C++ in sufficient depth to read, write, and understand code in that language.
-- *This is not a reference manual*. There is plenty of detailed information about ROS, including both [tutorials](http://wiki.ros.org/ROS/Tutorials) and exhaustive reference [material](http://wiki.ros.org/APIs) available online. This book makes no attempt to replace those resources. Instead, we present a selected subset of ROS features that, in the author's view, represents a useful starting point for using ROS.
-- *This is not a textbook on robotics algorithms*. The study of robots, especially the study of algorithms for controlling autonomous robots, can be quite fascinating. A dizzying variety of algorithms have been developed for various parts of this problem. This book will not teach you any of those algorithms<sup>2</sup>. Our focus is on a specific tool, namely ROS, that can ease the implementation and testing of those algorithms.
+- *Isto não é uma introdução à programação*.Nós não discutiremos conceitos de programação Básica com grande detalhe. Este livro assume que você já estudou C++ numa profundidade suficiente para ler, escrever e entender códigos nessa linguagem.
+- *Isto não é um manual de referência*. á muita informação detalhada sobre ROS, incluindo tanto [tutoriais](http://wiki.ros.org/ROS/Tutorials)como um [material](http://wiki.ros.org/APIs) de referência exaustivo disponível online. Este livro não faz nenhuma tentativa de substituir esses recursos. Em vez disso, nós apresentamos um selecionado de características do ROS que, na visão do autor, representa um ponto de partida útil para a utilização do ROS.
+- *Isto não é um livro texto em algoritmos robóticos*. O estudo de robôs, especialmente o estudo de algoritmos para o controle de robôs autônomos, pode ser bastante fascinante. Uma impressionante variedade de algoritmos têm sido desenvolvida para várias partes desse problema. Este livro não lhe ensinará nenhum desses algoritmos<sup>2</sup>. Nosso foco é em uma ferramenta específica, chamada ROS, que pode facilitar a implementação e o teste destes algoritmos.
 
-## Chapters and dependencies
+## Capítulos e dependências
 
-The [Figure 1.1](#1.1) shows the organization of the book. Chapters are shown as rectangles; arrows show the major dependencies between them. It should be fairly reasonable to read this book in any order that follows those constraints.
+A [Figura 1.1](#1.1) mostra a organização deste livro. Os capítulos são mostrados em retângulos; as setas mostram a maior dependência entre eles. Deve ser bastante razoável ler este livro em qualquer ordem que segue essas restrições.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/48807586/119573892-41faee80-bd8b-11eb-9bdd-b14df7567b06.png" width="400"/><br>
-  <b><i><a name="1.1"> Figure 1.1:</a></b> Dependencies between chapters.</i>
+  <b><i><a name="1.1"> Figure 1.1:</a></b> Dependência entre os capítulos.</i>
 </p>
 
-## Intended audience
+## Público Alvo
 
-This book should be useful for both students in robotics courses and for researchers or hobbyists that want to get a quick start with ROS. We'll assume that readers are comfortable with Linux (including tasks like using the command line, installing software, editing files, and setting environment variables), are familiar with C++, and want
-to write software to control robots. Generally, we'll assume that you are using Ubuntu Linux 14.04 (the newest version that is, at this writing, officially supported) and the bash shell. However, there are relatively few instances where these choices matter; other Linux distributions (especially those based on `deb` packages) and other shells will not usually be problematic.
+Este livro deve ser útil tanto para estudantes de cursos de robótica como para pesquisadores ou hobbistas que querem começar rapidamente com ROS.
+Nós assumiremos que esses leitores estão confortáveis com Linux (incluindo tarefas como utilizar linhas de comando, instalar software, editar pastas, e definir variáveis de ambiente), são familiarizados com C++, e querem escrever softwares para controlar robôs.
+Geralmente, vamos assumir  que você está usando Ubuntu Linux 14.04 ( a versão mais recente que é, até esse escrito, suportada oficialmente) e o shell bash. No entanto, existem relativamente poucos casos onde essas escolhas são importantes; outras distribuições Linux (Especialmente as baseadas em pacotes `deb`) e outras shells não serão normalmente problemáticas.
 
 ---
-<sup>2</sup> . . . but you should learn them anyway.
+<sup>2</sup> . . . mas você deverá aprender eles de qualquer forma.
+
 
