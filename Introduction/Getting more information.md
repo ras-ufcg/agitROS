@@ -1,32 +1,32 @@
-# Getting more information
+# Obtendo mais informações
 
-As alluded to above, this book makes no attempt to be a comprehensive reference for ROS. It's all but certain that you will need additional details to do anything interesting. Fortunately, online information about ROS is abundant.
+Como aludido acima, este livro não faz nenhuma tentativa de ser uma referência abrangente para ROS. É quase certo que você precisará de detalhes adicionais para fazer algo interessante. Felizmente, as informações online sobre ROS são abundantes.
 
-- Most importantly, the developers of ROS maintain extensive [documentation](http://wiki.ros.org/), including a set of tutorials. This book includes links to many of the corresponding pages in this documentation. If you are reading an electronic version of the book in a reasonably modern PDF viewer, you should be able to click these links directly to open them in your browser.
-- When unexpected things happen—and chances are quite good that they will — there is a question and answer site (in the style of Stack Exchange) devoted to [ROS](http://answers.ros.org/).
-- It may also be valuable to subscribe to the [ros-users mailing list](http://lists.ros.org/mailman/listinfo/ros-users) on which announcements sometimes appear.
+- Mais importante ainda, os desenvolvedores de ROS mantêm uma [documentação](http://wiki.ros.org/) extensa, including a set of tutorials. incluindo um conjunto de tutoriais. Este livro inclui links para muitas das páginas correspondentes nesta documentação. Se você estiver lendo uma versão eletrônica do livro em um visualizador de PDF razoavelmente moderno, poderá clicar nesses links diretamente para abri-los em seu navegador.
+- Quando coisas inesperadas acontecem - e é muito provável que isso aconteça - há um site de perguntas e respostas (no estilo do Stack Exchange) dedicado ao [ROS](http://answers.ros.org/).
+- Também pode ser valioso se inscrever na [lista de discussão dos usuários de ROS](http://lists.ros.org/mailman/listinfo/ros-users), na qual as novidades geralmente aparecem.
 
-Here are two important details that will help you make sense of some of the documentation, but are not always fully explained in context there.
+Aqui estão dois detalhes importantes que o ajudarão a entender parte da documentação, mas nem sempre são totalmente explicados no contexto.
 
-## Distributions
+## Distribuições
 
-Major versions of ROS are called [**distributions**](http://wiki.ros.org/Distributions), and are named using adjectives that start with with successive letters of the alphabet. (This is, for comparison, very similar to the naming schemes used for other large software projects, including Ubuntu and Android.) At the time of this writing, the current distribution is indigo. The next distribution, named [`jade`](http://wiki.ros.org/jade), is due in May 2015. Older distributions include `hydro`, `groovy`, `fuerte`, `electric`, `diamondback`, `C Turtle`, and `box turtle`. These distribution names appear in many places throughout the documentation.
+As versões principais de ROS são chamadas de [**distributions**](http://wiki.ros.org/Distributions) e são nomeadas usando adjetivos que começam com letras sucessivas do alfabeto. (Isso é, para comparação, muito semelhante aos esquemas de nomenclatura usados ​​para outros grandes projetos de software, incluindo Ubuntu e Android.) No momento em que este livro foi escrito, a distribuição atual era índigo. A próxima distribuição, chamada de [`jade`](http://wiki.ros.org/jade), será lançada em maio de 2015. Distribuições mais antigas incluem `hydro`, `groovy`, `fuerte`, `electric`, `diamondback`, `C Turtle`, e `box turtle`. Esses nomes de distribuição aparecem em muitos lugares ao longo da documentação.
 
-> :warning: To keep things as simple and up-to-date as possible, this book assumes that you areusing `indigo`.
+> :warning: Para manter as coisas o mais simples e atualizadas possível, este livro pressupõe que você esteja usando `indigo`.
 
-> :fast_forward:  If, for some reason, you need to use `hydro` instead of `indigo`, nearly all of the book's content still applies without modification. The same is true for `groovy` as well, with one important exception: In distributions newer than `groovy` (and, therefore, in this book), velocity commands for the `turtlesim` simulator have been changed to use a standard message type and topic name that happen to be shared with many real mobile robots.
+> :fast_forward:  Se, por algum motivo, você precisar usar `hydro` em vez de `indigo`, uase todo o conteúdo do livro ainda se aplica sem modificação. O mesmo é verdadeiro para `groovy` também, com uma exceção importante: em distribuições mais recentes que `groovy` (e, portanto, neste livro), os comandos de velocidade para o simulador `turtlesim` oram alterados para usar um tipo de mensagem padrão e nome de tópico que é compartilhado entre muitos robôs móveis
 >
-> | Distribution  | Topic name    | Message type  |
-> | ------------- | ------------- | ------------- |
+> | Distribuição  | Nome do tópico    | tipo de mensagem  |
+> | ------------- | ----------------- | ----------------- |
 > | `groovy` | `/turtle1/command_velocity`  | `turtlesim/Velocity` |
 > | `indigo`/`hydro`  | `/turtle1/cmd_vel` | `geometry_msgs/Twist`  |
 >
-> This change has a few practical implications:
-> - When adding dependencies to your package, you'll need a dependency on `turtlesim`, instead of on `geometry_msgs`.
-> - The relevant header file (see page 49) is `turtlesim/Velocity.h` rather than `geometry_msgs/Twist.h`.
-> - The `turtlesim/Velocity` message type has only two fields, called linear and angular. These fields play the same roles as the `linear.x` and `angular.z` fields of `geometry_msgs/Twist`. This change applies both on the command line and in C++ code.
+> Essa mudança tem algumas implicações práticas:
+> - Ao adicionar dependências ao seu pacote, você precisará de uma dependência de `turtlesim`, em vez de `geometry_msgs`.
+> - O arquivo de cabeçalho relevante (consulte a página 49) é `turtlesim/Velocity.h`  em vez de `geometry_msgs/Twist.h`.
+> - O tipo de mensagem `turtlesim/Velocity` tem apenas dois campos, chamados linear e angular. Esses campos desempenham as mesmas funções que os campos `linear.x` e `angular.z` de `geometry_msgs/Twist`. Essa alteração se aplica à linha de comando e ao código C++.
 
-## Build systems 
+## Sistemas de construção 
 
-Starting with the `groovy` distribution, ROS made some major changes to the way software is compiled. Older, `pre-groovy` distributions used a build system called `rosbuild`, but more recent versions have begun to replace `rosbuild` with a new build system called `catkin`. It is important to know about this change because a few of the tutorials have separate versions, depending on whether you're using `rosbuild` or `catkin`. These separate versions are selected using a pair of buttons near the top of the tutorial. This book describes `catkin`, but there may be some cases in which `rosbuild` is a better choice.
+Começando com a distribuição `groovy` distribution, ROS teve algumas mudanças importantes na forma como o _software_ é compilado. Distribuições mais antigas e pré `groovy`  usavam um sistema de construção chamado `rosbuild`,  mas versões mais recentes começaram a substituir o `rosbuild` por um novo sistema de construção chamado `catkin`. É importante saber sobre essa mudança porque alguns dos tutoriais têm versões separadas, dependendo se você está usando `rosbuild` ou `catkin`. Essas versões separadas são selecionadas usando um par de botões próximo ao topo do tutorial. Este livro descreve `catkin`, mas pode haver alguns casos em que `rosbuild` é a escolha melhor.
 
