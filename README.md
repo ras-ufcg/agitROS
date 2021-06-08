@@ -5,6 +5,8 @@ This repository stores the translation file of the book ["A Gentle Introduction 
 ## Translation Team
 
 Still to add
+* name1
+* name2
 
 ### How the Translation was made and what do you need to do it?
 
