@@ -6,7 +6,7 @@ This repository stores the translation file of the book ["A Gentle Introduction 
 
 Still to add
 
-## How the Translation was made and what do you need to do it?
+### How the Translation was made and what do you need to do it?
 
 The "Academy Translate" aims to bring Robotics educational material to Portuguese, because most of the material is made in English. We aim to facilitate the study of begginers in robotics translating this free material from the professor Peter Corke.
 
