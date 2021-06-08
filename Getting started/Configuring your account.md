@@ -1,34 +1,34 @@
-# Configuring your account
+# Configurando sua conta
 
-Whether you install ROS yourself or use a computer on which ROS is already installed, there are two important configuration steps that must be done within the account of every user that wants to use ROS.
+Mesmo que você instale o ROS ou use um computador que já possua o ROS instalado, têm dois passos importantes de configuração que devem ser feitos na conta de todo usuário que deseja utilizar o ROS.
 
-## Setting up `rosdep` in a user account 
+## Definindo o `rosdep` na conta de um usuário
 
-First, you must initialize the `rosdep` system in your account, using this command:
+Primeiro, você deve inicializar o sistema `rosdep` na sua conta, usando este comando:
 ```
 rosdep update
 ```
-This command stores some files in your home directory, in a subdirectory called `.ros`. It generally only needs to be done once. 
+Esse comando armazena alguns arquivos no seu diretório local, em um subdiretório chamado `.ros`. Isso geralmente só precisa ser feito uma vez.
 
-> :warning: Note that, unlike `rosdep` init above, the `rosdep update` command should be run using your normal user account, not using `sudo`.
+> ⚠️: Note que, diferente da inicial `rosdep` acima, o comando`rosdep update` deve ser executado usando sua conta normal de usuário, não usando`sudo`.
 
-## Setting environment variables
+## Definindo variáveis ambientais
 
-ROS relies on a few environment variables to locate the files it needs. To set these environment variables, you'll need to execute the [`setup.bash` script](http://wiki.ros.org/rosbash) that ROS provides, using this command:
+ROS depende de algumas variáveis de ambiente para localizar arquivos que ele necessita. Para definir essas variáveis, você precisará executar [`setup.bash` script](http://wiki.ros.org/rosbash) que o ROS dispõe, usando este comando:
 ```
 source /opt/ros/indigo/setup.bash
 ```
-You can then confirm that the environment variables are set correctly using a command like this:
+Você pode então confirmar que as variáveis ambientais estão definidas corretamente usando um comando assim:
 ```
 export | grep ROS
 ```
 
-If everything has worked correctly, you should see a handful of values (showing values for environment variables like `ROS_DISTRO` and `ROS_PACKAGE_PATH`) as the output from this command. If `setup.bash` has not been run, then the output of this command will usually be empty.
+Se tudo funcionou corretamente, você deve enxergar alguns valores (princípios recorrentes para variáveis ambientais como  `ROS_DISTRO` e `ROS_PACKAGE_PATH`)como saída desse comando. Se `setup.bash` não for executado, então a saída desse comando normalmente será vazia.
 
-> :warning: If you get “command not found” errors from the ROS commands introduced later in this chapter, the most likely reason is that `setup.bash` has not been run in your current shell.
+> :warning: Se ocorrerem erros “command not found” dos comandos ROS introduzidos posteriormente nesse capítulo, o motivo mais provável é que o  `setup.bash` não foi executado no seu console.
 
-Note, however, that the steps listed above apply only to the current shell. It would work perfectly well to simply execute that `source` command each time you start a new shell in which you'd like to execute ROS commands. However, this is both annoying and remarkably easy to forget, especially when you consider that the modular design of many ROS systems often calls for several different commands to execute concurrently, each in a separate terminal.
+Note, entretanto, que os passos listados acima se aplicam apenas ao console atual. Funcionará perfeitamente simplesmente executar esse comando `source` toda vez que você iniciar um novo shell no qual você gostaria de executar os comandos ROS. No entanto, isso é tanto irritante quanto notavelmente fácil de esquecer, especialmente quando você considera que o design modular dos sistemas ROS pede frequentemente por vários comandos diferentes para executarem simultaneamente, cada um em um terminal separado.
 
-Thus, you'll want to configure your account to run the `setup.bash` script automatically, each time you start a new shell. To do this, edit the file named `.bashrc` in your home directory, and put the above `source` command at the bottom.
+Assim, você vai optar por configurar sua conta para operar o roteiro  `setup.bash` ... automaticamente, cada vez voce inicia um novo console. Para fazer isso, edite o arquivo chamado `.bashrc` no seu diretório local, e ponha o primeiro comando `source` no final.
 
-> :fast_forward: In addition to setting environment variables, this `setup.bash` script also defines `bash` functions to implement a few commands, including `roscd` and `rosls`, which are introduced below. These functions are defined in the [`rosbash` package](http://wiki.ros.org/rosbash).
+> :fast_forward: Além de definir as variáveis de ambiente, esse `setup.bash` roteiro também estabelece funções `bash` para implementar alguns comandos incluindo  `roscd` e `rosls`,os quais são introduzidos abaixo. Essas funções são definidas no pacote [`rosbash` package](http://wiki.ros.org/rosbash).
