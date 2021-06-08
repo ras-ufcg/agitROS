@@ -31,7 +31,7 @@ Se funcionar corretamente, você terá um pequeno arquivo binário chamado `ros.
 ```
 sudo apt-key add ros.key
 ```
-Depois de completar este passo, (`apt-key` deve dizer `OK`), você pode excluir `ros.key` com segurança.
+Depois de completar este passo, (`apt-key` deve retornar `OK`), você pode excluir `ros.key` com segurança.
 
 ## Downloading the package lists
 
