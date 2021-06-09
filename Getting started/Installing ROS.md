@@ -33,37 +33,39 @@ sudo apt-key add ros.key
 ```
 Depois de completar este passo, (`apt-key` deve retornar `OK`), você pode excluir `ros.key` com segurança.
 
-## Downloading the package lists
+## Fazedo o Download das listas de pacote
 
-Once the repositories are configured, you can get the latest lists of available packages in the usual way:
+Quando os repositórios forem configurados, você pode obter as listas de pacotes disponiveis mais recentes, seguindo a maneira usual. 
 ```
 sudo apt-get update
 ```
-Note that this will update *all* of the repositories configured on your system, not just the newly added ROS repositories.
+Perceba que isso vai atualizar não apenas os repositórios ROS recém-adicionados, mas sim  *todos* os repositóorios configurados em seu sistema.
 
-## Installing the ROS packages 
+## Instalando os pacotes ROS 
 
-Now we can actually install the ROS software. The simplest approach is to perform a complete install of the core ROS system:
+Assim, pode-se de fato instalar o software ROS. A forma mais simples de abordagem é fazer uma instalação completa do sistema central ROS:
 ```
 sudo apt-get install ros-indigo-desktop-full
 ```
-If you have plenty of free disk space — a few GB should suffice — this package is almost certainly the best choice. If you need them, there are also some more compact alternatives, including `ros-indigo-desktop` and `ros-indigo-ros-base`, that omit some packages and tools in favor of reduced disk space requirements.
+Se você tiver muito espaço de disco disponível — alguns GB devem ser suficientes — é quase certo que esse pacote seja a melhor escolha. Se você precisar deles, existem ainda
+algumas alternativas mias compactas, incluindo `ros-indigo-desktop` e `ros-indigo-ros-base`, que omite algums pacotes e ferramentas a favor de reduzir o espaço no disco.
 
-## Installing turtlesim 
+## Instalando turtlesim 
 
-In this book we'll refer many times to a simple "simulator" called `turtlesim` to illustrate how things work. If you plan to follow along with any of the examples — Recommended answer: Yes — you'll need to install `turtlesim`. Use a command like this:
+Nesse livro vamos nos referir, muitas vezes, a um simples simulador chamado `turtlesim` para ilustrar com as coisas funcionam. Se você planeja seguir em frente com algum
+dos exemplos - resposta recomendada: Sim - você vai precisar instalar `turtlesim`. Use um comando como esse:
+
 ```
 sudo apt-get install ros-indigo-turtlesim
 ```
 
-## Setting up `rosdep` systemwide 
-After installing the ROS packages, you'll need to execute this command:
+## Configurando `rosdep` em todo o sistema
+Após instalar o pacote ROS, é necessário executar o seguinte comando:
 ```
 sudo rosdep init
 ```
-This is a one-time initialization step; once ROS is working correctly, many users will not need to revisit `rosdep`.
+Essa é uma etapa de inicialização de único passo; uma vez que o ROS está funcionando corretamente, muitos usuários não precisarão revisitar o `rosdep`.
 
-> :fast_forward: As its name suggests, the purpose of this command is to initialize [`rosdep`](http://wiki.ros.org/rosdep), which is a tool for checking and installing package dependencies in an OS-independent way. On Ubuntu, for example, rosdep acts as a front end to `apt-get`. We won't use `rosdep` directly, but we will use a few tools that invoke it behind the scenes. Those tools will be very unhappy if `rosdep`is not set up correctly.
+> :fast_forward: Como o próprio nome sugere, o propósito desse comando é inicializar o [`rosdep`] (http://wiki.ros.org/rosdep), que é uma ferramenta para verificar e instalar dependências de pacotes em um caminho com sistema operacional independente. No Ubuntu, por exemplo, o rosdep atua como um front end para o `apt-get`. Não usaremos o `rosdep` diretamente, mas usaremos algumas ferramentas que o invocam por trás das cenas. Essas ferramentas ficarão muito tristes se o `rosdep` não for configurado corretamente.
 
-> :warning: The online documentation occasionally mentions a tool called `rosinstall`, whose job is to [install ROS software from source](http://wiki.ros.org/rosinstall). The software that we'll need in this book is all available in Ubuntu `deb` packages, which do not require `rosinstall`.
-
+> :warning: A documentação online ocasionalmente menciona uma ferramenta chamada `rosinstall`, cujo trabalho é [instalar o software ROS da fonte](http://wiki.ros.org/rosinstall). O software utilizado neste livro está disponível nos pacotes `deb` do Ubuntu, que não requerem` rosinstall`.
