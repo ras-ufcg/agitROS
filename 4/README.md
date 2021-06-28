@@ -1,4 +1,9 @@
-# Mensagens Log
-*No qual nós geramos e visualizamos mensagens do Log*.
+# Log messages
+*In which we generate and view log messages*.
 
-Nós já vimos, nos programas de exemplo do capítulo 3, uma máxima chamada ROS-_INFO_STREAM que exibe mensagens informativas para o usuário. Essas mensagens são exemplos de mensagens log. ROS fornece um rico sistema log que inclui a ROS_INFO _STREAM juntamente com vários outros recursos. Nesse capítulo, nós veremos como usar esse sistema log.
+We have already seen, in the example programs from Chapter 3, a macro called ROS-
+_INFO_STREAM that displays informative messages to the user. These messages are
+examples of **log messages**. ROS provides a rich logging system that includes ROS_INFO-
+_STREAM along with a number of other features. In this chapter, we’ll see how to use
+that logging system.
+
