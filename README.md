@@ -24,4 +24,4 @@ Both of the projects that the "Academy Translate" had, were done without a deadl
 
 ## Contents:
 
-* Introduction
+Still to add
