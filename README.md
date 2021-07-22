@@ -33,4 +33,4 @@ Both of the projects that the "Academy Translate" had, were done without a deadl
 - Victor Moreno
 - Victor Rafael
 - Vitor Matos
-- 
+- Yuri Loya
