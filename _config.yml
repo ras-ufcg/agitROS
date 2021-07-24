@@ -22,8 +22,8 @@ title: agitROS
 email: ras@ee.ufcg.edu.br
 description: >- # this means to ignore newlines until "baseurl:"
   This repository stores the translation file of the book "A Gentle Introduction to ROS" of Jason O'Kane. We will translate it to Portuguese (Brasil).
-baseurl: "agitROS/" # the subpath of your site, e.g. /blog
-url: "https://ras-ufcg.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/agitROS" # the subpath of your site, e.g. /blog
+url: "https://ras-ufcg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  ras-ufcg
 
