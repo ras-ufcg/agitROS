@@ -1,41 +1,48 @@
-## Welcome to GitHub Pages
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-🚀 🐼
+layout: default
+title: Home
+nav_order: 1
+permalink: /
+---
 
-yes
+# A Gentle Introduction to ROS
 
-You can use the [editor on GitHub](https://github.com/pmarsceill/test-jtd/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository stores the translation file of the book ["A Gentle Introduction to ROS"](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf) of Jason O'Kane. We will translate it to Portuguese (Brasil).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## How the Translation was made and what do you need to do it?
 
-### Markdown
+The "Academy Translate" aims to bring Robotics educational material to Portuguese, because most of the material is made in English. We aim to facilitate the study of begginers in robotics translating this free material from the professor Peter Corke.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### What do you need:
+  * A team of people that wants to contribute and have time to do it;
+  * A person that will lead them, it needs to be organized and needs to know how to deal with people;
+  * A material that needs to be translated;
+  
+### Philosophy:
 
-```markdown
-Syntax highlighted code block
+What do you need most to carry a project like this is a discipline of work, it's an "ants job", if everyday you work in a small pieace of a project, after a year you will have a great amount of work done. 
+Both of the projects that the "Academy Translate" had, were done without a deadline to finish it, but all the tasks that we had have deadlines so we can organize better the flow of work, so the people from the project could not get idle
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
+## Team
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pmarsceill/test-jtd/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Alef Adonis
+- Allyson Hyago
+- Arthur Oliveira
+- Beatriz Barros 
+- [Débora Oliveira](https://github.com/debOliveira) 
+- Gabriel
+- Gabrielle
+- Hortência
+- Ivna Rebecca
+- João Pedro 
+- Maysa Araujo
+- Nivia Nobrega
+- Victor Moreno
+- Victor Rafael
+- Vitor Matos
+- Yuri Loya
