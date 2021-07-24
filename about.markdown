@@ -1,18 +1,44 @@
 ---
 layout: page
-title: About
+title: Sobre o projeto
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Sobre o projeto
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Esse repositório armazena a tradução online do livro ["A Gentle Introduction to ROS"](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf) do Professor Jason O'Kane na sua tradução para português brasileiro.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## How the Translation was made and what do you need to do it?
 
+The "Academy Translate" aims to bring Robotics educational material to Portuguese, because most of the material is made in English. We aim to facilitate the study of begginers in robotics translating this free material from the professor Peter Corke.
 
-[jekyll-organization]: https://github.com/jekyll
+### What do you need:
+  * A team of people that wants to contribute and have time to do it;
+  * A person that will lead them, it needs to be organized and needs to know how to deal with people;
+  * A material that needs to be translated;
+  
+### Philosophy:
+
+What do you need most to carry a project like this is a discipline of work, it's an "ants job", if everyday you work in a small pieace of a project, after a year you will have a great amount of work done. 
+Both of the projects that the "Academy Translate" had, were done without a deadline to finish it, but all the tasks that we had have deadlines so we can organize better the flow of work, so the people from the project could not get idle
+
+---
+
+## Team
+
+- Alef Adonis
+- Allyson Hyago
+- Arthur Oliveira
+- Beatriz Barros 
+- [Débora Oliveira](https://github.com/debOliveira) 
+- Gabriel
+- Gabrielle
+- Hortência
+- Ivna Rebecca
+- João Pedro 
+- Maysa Araujo
+- Nivia Nobrega
+- Victor Moreno
+- Victor Rafael
+- Vitor Matos
+- Yuri Loya
