@@ -1,3 +1,10 @@
+---
+layout: page
+title: Começando com ROS
+nav_order: 3
+has_children: true
+---
+
 # Começando
 
 *Aqui instalamos o ROS, introduzimos alguns conceitos básicos, e o interagimos com um sistema funcional.*
