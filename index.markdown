@@ -1,0 +1,49 @@
+---
+layout: home
+nav_exclude: true
+---
+
+# Sobre o projeto
+
+Esse repositório armazena a tradução online do livro ["A Gentle Introduction to ROS"](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf) do Professor Jason O'Kane na sua tradução para português brasileiro.
+
+## Como a tradução foi feita?
+
+O grupo *Academy Translate* objetiva trazer materiais educacionais sobre robótica para o idioma português, uma vez que a maior parte dos documentos são encontrados apenas em inglês. Você pode encontrar mais traduções no nosso [GitHub](https://github.com/ras-ufcg) ou a partir da lista abaixo.
+
+#### Outros materiais traduzidos
+
+1. [Python para todos](http://do1.dr-chuck.com/pythonlearn/PT_br/pythonlearn.pdf), Charles Severance
+2. [Robot Academy](https://robotacademy.net.au/), Peter Corke
+  
+### Filosofia do grupo
+
+O que você mais precisa para gerir um projeto desse tipo é disciplina. Se a cada dia um pequeno trabalho é concluído, após um ano nós teremos muitos resultados publicados. 
+
+#### Organização
+
+Em todas as nossas atividades há especificação de uma *deadline*, com o intuito de evitar ociosidade.
+
+---
+
+### Licença 
+
+agitROS-PT/BR is &copy; 2021 RAS/UFCG Student Branch and Jason O'Kane. Distributed by an [CC0 1.0 Universal license](https://github.com/ras-ufcg/agitROS/blob/main/LICENSE\).
+
+### Contribuindo
+
+Correções e adições ao conteúdo desse site são bem vindas. Por favor, primeiramente discuta a mudança em uma *issue* (botão abaixo) ou nos contacte por email antes de abrir um *pull request*.
+
+
+[Issues](https://github.com/ras-ufcg/agitROS/issues){: .btn .btn-purple }
+[Pull request](https://github.com/ras-ufcg/agitROS){: .btn .btn-outline }
+
+#### Aos nossos contribuidores, muito obrigado!
+
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
+  </li>
+{% endfor %}
+</ul>

@@ -1,6 +1,14 @@
+---
+layout: page
+title: Services
+has_children: true
+nav_order: 9
+---
+
 # Services
 
-*In which we call services and respond to service requests*
+In which we call services and respond to service requests.
+{: .fs-6 .fw-300 }
 
 In Chapters 2 and 3, we focused on how messages travel between nodes. Even though theyare the primary method for communication in ROS, messages do have some limitations. This chapter introduces an alternative method of communication called **service calls**. Service calls differ from messages in two ways.
 
@@ -8,4 +16,4 @@ In Chapters 2 and 3, we focused on how messages travel between nodes. Even thoug
 
 - Service calls implement **one-to-one** communication. Each service call is initiated by one node, and the response goes back to that same node. On the other hand, each message is associated with a topic that might have many publishers and many subscribers.
 
-Aside from these (very important!) differences, services are similar to messages. In this chapter, we’ll see how to inspect and call services from the command line, and how to write nodes that act as either service clients or as servers.
+Aside from these (very important!) differences, services are similar to messages. In this chapter, we'll see how to inspect and call services from the command line, and how to write nodes that act as either service clients or as servers.
