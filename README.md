@@ -1,22 +1,37 @@
-# A Gentle Introduction to ROS
+# Sobre o projeto
 
-This repository stores the translation file of the book ["A Gentle Introduction to ROS"](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf) of Jason O'Kane. We will translate it to Portuguese (Brasil).
+Esse repositório armazena a tradução online do livro ["A Gentle Introduction to ROS"](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf) do Professor Jason O'Kane na sua tradução para português brasileiro.
 
-### How the Translation was made and what do you need to do it?
+## Como a tradução foi feita?
 
-The "Academy Translate" aims to bring Robotics educational material to Portuguese, because most of the material is made in English. We aim to facilitate the study of begginers in robotics translating this free material from the professor Peter Corke.
+O grupo *Academy Translate* objetiva trazer materiais educacionais sobre robótica para o idioma português, uma vez que a maior parte dos documentos são encontrados apenas em inglês. Você pode encontrar mais traduções no nosso [GitHub](https://github.com/ras-ufcg) ou a partir da lista abaixo.
 
-* What do you need:
-  * A team of people that wants to contribute and have time to do it;
-  * A person that will lead them, it needs to be organized and needs to know how to deal with people;
-  * A material that needs to be translated;
+#### Outros materiais traduzidos
+
+1. [Python para todos](http://do1.dr-chuck.com/pythonlearn/PT_br/pythonlearn.pdf), Charles Severance
+2. [Robot Academy](https://robotacademy.net.au/), Peter Corke
   
-* Philosophy:
+### Filosofia do grupo
 
-What do you need most to carry a project like this is a discipline of work, it's an "ants job", if everyday you work in a small pieace of a project, after a year you will have a great amount of work done. 
-Both of the projects that the "Academy Translate" had, were done without a deadline to finish it, but all the tasks that we had have deadlines so we can organize better the flow of work, so the people from the project could not get idle
+O que você mais precisa para gerir um projeto desse tipo é disciplina. Se a cada dia um pequeno trabalho é concluído, após um ano nós teremos muitos resultados publicados. 
 
-### Team
+#### Organização
+
+Em todas as nossas atividades há especificação de uma *deadline*, com o intuito de evitar ociosidade.
+
+---
+
+### Licença 
+
+agitROS-PT/BR is &copy; 2021 RAS/UFCG Student Branch and Jason O'Kane. Distributed by an [CC0 1.0 Universal license](https://github.com/ras-ufcg/agitROS/blob/main/LICENSE\).
+
+### Contribuindo
+
+Correções e adições ao conteúdo desse site são bem vindas. Por favor, primeiramente discuta a mudança em uma *issue* (botão abaixo) ou nos contacte por email antes de abrir um *pull request*.
+
+---
+
+### Nosso time
 
 - Alef Adonis
 - Allyson Hyago
