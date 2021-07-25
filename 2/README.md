@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Começando
-permalink: /comec/
 has_children: true
 nav_order: 3
 ---

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Introdução
-permalink: /intro/
 has_children: true
 nav_order: 2
 ---

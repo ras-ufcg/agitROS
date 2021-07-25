@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Recursos de grafo
-permalink: /graph/
 has_children: true
 nav_order: 6
 ---

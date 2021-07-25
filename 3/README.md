@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Escrevendo programas no ROS
-permalink: /escrev/
 has_children: true
 nav_order: 4
 ---
