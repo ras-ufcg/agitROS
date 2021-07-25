@@ -19,7 +19,7 @@ nav_order: 3
 ---
 
 
-Let’s have a more complete look at how to generate log messages from C++ code.
+Let's have a more complete look at how to generate log messages from C++ code.
 
 ### Generating simple log messages
 
@@ -86,7 +86,7 @@ any DEBUG-level messages, because the default minimum level is INFO.
 
 > ⚠️ Stream manipulators are effective only for the log message in which they appear.
 > Any manipulators you would like to use must be re-inserted every time. <br>
->> ⏩ Here’s why this limitation on stream manipulators exists: As their all-capital
+>> ⏩ Here's why this limitation on stream manipulators exists: As their all-capital
 >> names suggest, the ROS_..._STREAM constructions are macros. Each expands to a short block of code that creates a std::stringstream and inserts 
 >> the arguments you provide into that stream. The expanded code then
 >> ships the fully-formatted contents of that std::stringstream to an internal
@@ -99,7 +99,7 @@ any DEBUG-level messages, because the default minimum level is INFO.
 > ```
 > ROS_INFO(format, ...);
 > ```
-> generates INFO-level log messages. These macros work exactly as you might expect, at least if you’re familiar with printf. As a concrete example, the output line in
+> generates INFO-level log messages. These macros work exactly as you might expect, at least if you're familiar with printf. As a concrete example, the output line in
 > Listing 3.4 is roughly equivalent to:
 > ```
 > ROS_INFO("position=(%0.2f,%0.2f) direction=%0.2f",
@@ -110,7 +110,7 @@ any DEBUG-level messages, because the default minimum level is INFO.
 > the _STREAM part.
 {: .fs-3 .code-example }
 
-Notice that there’s no need to use std::endl nor any other line terminator, because the
+Notice that there's no need to use std::endl nor any other line terminator, because the
 logging system is already line-oriented. Each call to any of these macros will generate a
 single, complete log message which will be displayed as a single line.
 
@@ -121,8 +121,8 @@ loops or in frequently-called functions are important to the user, but also irri
 One natural way to deal with these situations would be to use a static variable to
 ensure that the message is generated only once, the first time it is reached. [Lista 4.3](#lista-43)
 shows a C++ fragment that would accomplish this. To avoid repeating this cumbersome
-block of code—Wrapping it in a function would not work, because this technique needs a
-distinct static variable for each statement—ROS provides shorthand macros that generate
+block of code — Wrapping it in a function would not work, because this technique needs a
+distinct static variable for each statement — ROS provides shorthand macros that generate
 precisely these sorts of one-time only log messages.
 ```
 ROS_DEBUG_STREAM_ONCE(message);
@@ -132,7 +132,7 @@ ROS_ERROR_STREAM_ONCE(message);
 ROS_FATAL_STREAM_ONCE(message);
 ```
 
-The first time these macros are encountered during a program’s execution, they generate
+The first time these macros are encountered during a program's execution, they generate
 the same log messages as the corresponding non-ONCE versions. After that first execution, these statements have no effect. [Lista 4.4](#lista-44) shows a minimal example, in which the
 logging macros each generate one message, on the first iteration of the loop, and are ignored on all future iterations.
 
@@ -220,9 +220,9 @@ int main(int argc, char∗∗argv) {
 Each instance of any `ROS_. . . _STREAM_THROTTLE` macro will generate its log
 message the first time it is executed. Subsequent executions will be ignored, until the
 specified amount of time has passed. The timeouts are tracked separately (using a local
-static variable that stores the “last hit” time) for each instance of any of these macros.
+static variable that stores the "last hit" time) for each instance of any of these macros.
 [Lista 4.5](#lista-45) shows a program that uses these macros to get behavior very similar to the
 count program from [Lista 4.1](#lista-41). The key difference, apart from the the content of the messages, 
 is that the program in [Lista 4.5](#lista-45) will consume more computation time, because it
-uses polling, rather than timed sleeping, to decide when it’s time to generate new messages. 
+uses polling, rather than timed sleeping, to decide when it's time to generate new messages. 
 This sort of polling is, in real programs, generally a bad idea.
