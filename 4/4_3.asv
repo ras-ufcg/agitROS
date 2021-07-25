@@ -25,9 +25,9 @@ Let’s have a more complete look at how to generate log messages from C++ code.
 
 There are five basic C++ macros for generating log messages, one for each severity level:
 
-#### **Lista 4.1**
+#### *Lista 4.1*
 {: .no_toc }
-#### A program called `count.cpp` that generates log messages at all five severity levels.
+#### A program called `count.cpp` that generates log messages at all five severity levels..
 ```
   // This program periodically generates log messages at
   // various severity levels.
@@ -68,11 +68,6 @@ There are five basic C++ macros for generating log messages, one for each severi
 The *message* argument of each of these macros can handle exactly the kinds of expressions that work with a C++ ostream, such as std::cout. This includes using the insertion
 operator (<<) on primitive data types like int or double, on composite types for which that operator is properly overloaded, and on standard stream manipulators like std::fixed,
 std::setprecision, or std::boolalpha.
-
-#### **Lista 4.2**
-{: .no_toc }
-#### Sample output from running count for a few seconds. This output does not contain
-any DEBUG-level messages, because the default minimum level is INFO.
 ```
 [ INFO] [1375889196.165921375]: 3 is divisible by 3.
 [ WARN] [1375889196.365852904]: 5 is divisible by 5.
@@ -83,6 +78,8 @@ any DEBUG-level messages, because the default minimum level is INFO.
 [ INFO] [1375889197.065870949]: 12 is divisible by 3.
 [ INFO] [1375889197.365847834]: 15 is divisible by 3.
 ```
+Listing 4.2: Sample output from running count for a few seconds. This output does not contain
+any DEBUG-level messages, because the default minimum level is INFO.
 
 > ⚠️ Stream manipulators are effective only for the log message in which they appear.
 > Any manipulators you would like to use must be re-inserted every time. <br>
@@ -119,7 +116,7 @@ single, complete log message which will be displayed as a single line.
 Sometimes, log messages that are generated inside
 loops or in frequently-called functions are important to the user, but also irritatingly repetitive. 
 One natural way to deal with these situations would be to use a static variable to
-ensure that the message is generated only once, the first time it is reached. [Lista 4.3](#lista-43)
+ensure that the message is generated only once, the first time it is reached. Listing 4.3
 shows a C++ fragment that would accomplish this. To avoid repeating this cumbersome
 block of code—Wrapping it in a function would not work, because this technique needs a
 distinct static variable for each statement—ROS provides shorthand macros that generate
@@ -133,19 +130,13 @@ ROS_FATAL_STREAM_ONCE(message);
 ```
 
 The first time these macros are encountered during a program’s execution, they generate
-the same log messages as the corresponding non-ONCE versions. After that first execution, these statements have no effect. [Lista 4.4](#lista-44) shows a minimal example, in which the
+the same log messages as the corresponding non-ONCE versions. After that first execution, these statements have no effect. Listing 4.4 shows a minimal example, in which the
 logging macros each generate one message, on the first iteration of the loop, and are ignored on all future iterations.
 
 ### Generating throttled log messages
 
 Similarly, there are macros for throttling the rate at
 which a given log message appears.
-
-#### **Lista 4.3**
-{: .no_toc }
-#### A fragment of C++ that disables a log message after its first execution. The
-`ROS_... _STREAM_ONCE` macros expand to very similar code blocks.
-
 ```
 // Don't do this directly. Use ROS_..._STREAM_ONCE instead.
 {
@@ -157,10 +148,8 @@ which a given log message appears.
   }
 }
 ```
- 
-#### **Lista 4.4**
-{: .no_toc }
-#### A C++ program called `once.cpp` that generates only five log messages.
+Listing 4.3: A fragment of C++ that disables a log message after its first execution. The
+ROS_... _STREAM_ONCE macros expand to very similar code blocks.
 ```
 // This program generates a single log message at each
 // severity level.
@@ -179,7 +168,7 @@ int main(int argc, char∗∗argv) {
   }
 }
 ```
-
+Listing 4.4: A C++ program called once.cpp that generates only five log messages.
 ```
 ROS_DEBUG_STREAM_THROTTLE(interval, message);
 ROS_INFO_STREAM_THROTTLE(interval, message);
@@ -188,11 +177,6 @@ ROS_ERROR_STREAM_THROTTLE(interval, message);
 ROS_FATAL_STREAM_THROTTLE(interval, message);
 ```
 The *interval* parameter is a double that specifies the minimum amount of time, measured in seconds, that must pass between successive instances of the given log message.
-
-#### **Lista 4.5**
-{: .no_toc }
-#### A C++ program called `throttle.cpp` that shows throttled log messages.
-
 ```
 // This program generates log messages at varying severity
 // levels, throttled to various maximum speeds.
@@ -216,13 +200,14 @@ int main(int argc, char∗∗argv) {
    }
 }
 ```
+Listing 4.5: A C++ program called throttle.cpp that shows throttled log messages.
 
-Each instance of any `ROS_. . . _STREAM_THROTTLE` macro will generate its log
+Each instance of any ROS_. . . _STREAM_THROTTLE macro will generate its log
 message the first time it is executed. Subsequent executions will be ignored, until the
 specified amount of time has passed. The timeouts are tracked separately (using a local
 static variable that stores the “last hit” time) for each instance of any of these macros.
-[Lista 4.5](#lista-45) shows a program that uses these macros to get behavior very similar to the
-count program from [Lista 4.1](#lista-41). The key difference, apart from the the content of the messages, 
-is that the program in [Lista 4.5](#lista-45) will consume more computation time, because it
+Listing 4.5 shows a program that uses these macros to get behavior very similar to the
+count program from Listing 4.1. The key difference, apart from the the content of the messages, 
+is that the program in Listing 4.5 will consume more computation time, because it
 uses polling, rather than timed sleeping, to decide when it’s time to generate new messages. 
 This sort of polling is, in real programs, generally a bad idea.
