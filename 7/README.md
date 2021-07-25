@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Parameters
+title: Parâmetros
 has_children: true
 nav_order: 8
 ---
 
-# Parameters
+# Parâmetros
 
 In which we configure nodes using parameters.
 {: .fs-6 .fw-300 }

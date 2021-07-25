@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Mensagens do Log
+title: Mensagens do log
 has_children: true
 nav_order: 5
 ---
 
 
-# Mensagens do Log
+# Mensagens do log
 No qual nós geramos e visualizamos mensagens do Log.
 {: .fs-6 .fw-300 }
 

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Conclusion
+title: Conclusão
 has_children: true
 nav_order: 11
 ---
 
-# Conclusion
+# Conclusão
 
 In which we preview some additional topics.
 {: .fs-6 .fw-300 }
