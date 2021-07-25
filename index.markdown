@@ -26,21 +26,24 @@ Em todas as nossas atividades há especificação de uma *deadline*, com o intui
 
 ---
 
-## Time de tradução
+### Licença 
 
-- Alef Adonis
-- Allyson Hyago
-- Arthur Oliveira
-- Beatriz Barros 
-- [Débora Oliveira](https://github.com/debOliveira) 
-- Gabriel
-- Gabrielle
-- Hortência
-- Ivna Rebecca
-- João Pedro 
-- Maysa Araujo
-- Nivia Nobrega
-- Victor Moreno
-- Victor Rafael
-- Vitor Matos
-- Yuri Loya
+agitROS-PT/BR is &copy; 2021 RAS/UFCG Student Branch and Jason O'Kane. Distributed by an [CC0 1.0 Universal license](https://github.com/ras-ufcg/agitROS/blob/main/LICENSE\).
+
+### Contribuindo
+
+Correções e adições ao conteúdo desse site são bem vindas. Por favor, primeiramente discuta a mudança em uma *issue* (botão abaixo) ou nos contacte por email antes de abrir um *pull request*.
+
+
+[Issues](https://github.com/ras-ufcg/agitROS/issues){: .btn .btn-purple }
+[Pull request](https://github.com/ras-ufcg/agitROS){: .btn .btn-outline }
+
+#### Aos nossos contribuidores, muito obrigado!
+
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
+  </li>
+{% endfor %}
+</ul>
