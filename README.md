@@ -48,19 +48,19 @@ Correções e adições ao conteúdo desse site são bem vindas. Por favor, prim
 
 ### Nosso time
 
-- Alef Adonis
-- Allyson Hyago
-- Arthur Oliveira
-- Beatriz Barros 
+- [Alef Adonis](https://github.com/AlefAdonis)
+- [Allyson Hyago](https://github.com/alyssonhyago)
+- [Arthur Oliveira](https://github.com/dimitriarthur)
+- [Beatriz Barros](https://github.com/BiaBarrosM) 
 - [Débora Oliveira](https://github.com/debOliveira) 
-- Gabriel
-- Gabrielle
-- Hortência
-- Ivna Rebecca
-- João Pedro 
-- Maysa Araujo
-- Nivia Nobrega
-- Victor Moreno
-- Victor Rafael
-- Vitor Matos
+- [Gabriel](https://github.com/Galaxhar)
+- [Gabrielle Barbosa](https://github.com/zgabriellez)
+- [Hortência Diniz](https://github.com/hortenciadiniz)
+- [Ivna Rebecca](https://github.com/IvnaRebecca)
+- [João Pedro](https://github.com/JoaoPi314) 
+- [Maysa Araujo](https://github.com/maysaaraujo)
+- [Nivia Nobrega](https://github.com/nobreganivia)
+- [Victor Moreno](https://github.com/victorgmoreno)
+- [Victor Rafael](https://github.com/victorrbmaciel)
+- [Vitor Matos](https://github.com/Matos-V)
 - Yuri Loya
