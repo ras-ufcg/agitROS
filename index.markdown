@@ -3,6 +3,8 @@ layout: home
 nav_exclude: true
 ---
 
+
+![Status](https://img.shields.io/static/v1?style=flat&logo=github&label=status&message=in%20progress&color=blue) [![GitHub license](https://img.shields.io/github/license/ras-ufcg/agitROS.svg)](https://github.com/ras-ufcg/agitROS/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](http://makeapullrequest.com)  [![GitHub forks](https://img.shields.io/github/forks/ras-ufcg/agitROS.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/ras-ufcg/agitROS/network/) [![GitHub stars](https://img.shields.io/github/stars/ras-ufcg/agitROS.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/ras-ufcg/agitROS/stargazers/) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fras-ufcg.github.io%2FagitROS%2F&count_bg=%23A075C9&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 # Sobre o projeto
 
 Esse repositório armazena a tradução online do livro ["A Gentle Introduction to ROS"](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf) do Professor Jason O'Kane na sua tradução para português brasileiro.
