@@ -8,14 +8,14 @@ nav_order: 6
 
 # Recursos de grafo
 
-In which we learn how ROS resolves the names of nodes, topics, parameters, and services.
+*No qual nós aprendemos como ROS denomina nodes, tópicos, parâmetros e serviços.*
 {: .fs-6 .fw-300 }
 
-In Chapter 3, we used strings like "`hello_ros`" and "`publish_velocity`" to give names 
+No capítulo 3, nós utilizamos strings chamadas "`hello_ros`" e "`publish_velocity`" para denominar
+nodes e strings como "`turtle1/cmd_vel`" e "`turtle1/pose`" como nomes de tópicos.
 to nodes, and strings like "`turtle1/cmd_vel`" and "`turtle1/pose`" as the names of topics. 
-All of these are examples of **graph resource names**. ROS has a flexible naming system that 
-accepts several different kinds of names. (These four, for example, are all **relative names**.) 
-In this chapter, we'll take a short detour to understand the various kinds of graph resource 
-names, and how ROS resolves them. We present these ideas, which are actually quite simple, as 
-a separate chapter because they're relevant to most of the concepts in the second half of this 
-book.
+Todos esses são exemplos de **recursos de grafo** . ROS possui um sistema flexível para nomear que
+aceita diferentes tipos de nomes. (Esses quatro, por exemplo, são **nomes relativos**.)
+Nesse capítulo, nós pegaremos um atalho para entender vários tipos de recursos de grafo para nomear,
+bem como ROS os decide. Nós apresentamos essas ideias, que são na verdade simples, em um
+capítulo separado porque elas são relevantes para a maioria dos conceitos da segunda metade deste livro.
