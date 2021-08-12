@@ -38,7 +38,7 @@ Em todas as nossas atividades há especificação de uma *deadline*, com o intui
 
 ### Licença 
 
-agitROS-PT/BR is &copy; 2021 RAS/UFCG Student Branch and Jason O'Kane. Distributed by an [CC0 1.0 Universal license](https://github.com/ras-ufcg/agitROS/blob/main/LICENSE\).
+agitROS-PT/BR is &copy; 2021 RAS/UFCG Student Branch and Jason O'Kane. Distributed by an [CC0 1.0 Universal license](https://github.com/ras-ufcg/agitROS/blob/main/LICENSE).
 
 ### Contribuindo
 
