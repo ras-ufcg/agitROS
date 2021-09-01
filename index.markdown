@@ -43,6 +43,7 @@ Em todas as nossas atividades há especificação de uma *deadline*, com o intui
 | 8 | Serviços                    | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">    |  
 | 9 | Gravando e reproduzindo uma mensagem | <img alt="revisão" src="https://img.shields.io/badge/-Esperando%20revisão-lightgrey"> <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen"> | 
 | 10| Conclusão                             | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">     | 
+{: .fs-2 }
 ---
 
 ### Licença 
