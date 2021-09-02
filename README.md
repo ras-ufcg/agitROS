@@ -20,19 +20,20 @@ O que você mais precisa para gerir um projeto desse tipo é disciplina. Se a ca
 #### Organização
 
 Em todas as nossas atividades há especificação de uma *deadline*, com o intuito de evitar ociosidade.
+
 #### Status do projeto
 
 | #        | Capítulo          | _Status_ |
 |:--|:----------------------------|:------------------|
 | 1 | Introdução                  |  <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">| 
-| 2 | Começando                   | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">   |  
-| 3 | Escrevendo programas no ROS |  <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">   | 
-| 4 | Mensagens no log            | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">   | 
-| 5 | Recursos de grafo           | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">  | 
+| 2 | Começando                   | <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">   |  
+| 3 | Escrevendo programas no ROS |  <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">   | 
+| 4 | Mensagens no log            | <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">   | 
+| 5 | Recursos de grafo           | <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">  | 
 | 6 | Arquivos de `launch`        | <img alt="tradução" src="https://img.shields.io/badge/-Em%20formatação-red">   | 
 | 7 | Parâmetros                  | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">    |
 | 8 | Serviços                    | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">    |  
-| 9 | Gravando e reproduzindo uma mensagem | <img alt="revisão" src="https://img.shields.io/badge/-Esperando%20revisão-lightgrey"> <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen"> | 
+| 9 | Gravando e reproduzindo uma mensagem | <img alt="tradução" src="https://img.shields.io/badge/-traduzido-blue"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen"> | 
 | 10| Conclusão                             | <img alt="tradução" src="https://img.shields.io/badge/-Em%20tradução-orange"> <img alt="formatado" src="https://img.shields.io/badge/-formatado-brightgreen">     | 
 ---
 
