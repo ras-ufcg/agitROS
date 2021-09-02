@@ -7,14 +7,11 @@ nav_order: 8
 
 # Parâmetros
 
-In which we configure nodes using parameters.
+No qual configuramos nós usando parâmetros.
 {: .fs-6 .fw-300 }
 
-In addition to the messages that we've studied so far, ROS provides another mechanism
-called [**parameters**](http://wiki.ros.org/roscpp/Overview/Parameter%20Server) to get information to nodes. The idea is that a centralized [**parameter
-server**](http://wiki.ros.org/roscpp/Overview/ParameterServer) keeps track of a collection of values — things like integers, floating point numbers,
-strings, or other data — each identified by a short string name. Because parameters
-must be actively queried by the nodes that are interested in their values, they are most
-suitable for configuration information that will not change (much) over time.
-This chapter introduces parameters, showing how to access them from the command
-line, from within nodes, and in launch files.
+Além das mensagens que estudamos até agora, o ROS fornece outro mecanismo chamado
+[**parâmetros**](http://wiki.ros.org/roscpp/Overview/Parameter%20Server) para obter informações para os nós. A ideia é que um [**servidor de parâmetros**](http://wiki.ros.org/roscpp/Overview/ParameterServer) centralizado mantenha o controle de uma coleção de valores - coisas como números inteiros e de ponto 
+flutuante, strings ou outros dados - cada um identificado por um nome de string curto. Como os parâmetros devem ser consultados ativamente pelos nós que 
+estão interessados em seus valores, eles são mais adequados para informações de configuração que não mudarão (muito) com o tempo. Este capítulo apresenta 
+parâmetros, mostrando como acessá-los a partir da linha de comando, de dentro dos nós e em arquivos de inicialização.
