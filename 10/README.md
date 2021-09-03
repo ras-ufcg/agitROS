@@ -7,12 +7,14 @@ nav_order: 11
 
 # Conclusão
 
-In which we preview some additional topics.
+Na qual temos uma amostra de alguns tópicos adicionais.
 {: .fs-6 .fw-300 }
 
-In the preceding chapters, we've looked into the basic workings of ROS in some detail. We
-saw examples of most of those concepts using the `turtlesim`  simulator. Of course, it is
-quite unlikely that your original interest in ROS was based on a desire to drive imaginary
-turtles around. If this book has done its job, you should be ready to start using ROS — 
-certainly with the help of the documentation, and quite likely with the help of existing
-packages — to solve the real robotics problems that you care about. 
+Nos capítulos anteriores, examinamos algumas ações básicas do ROS em detalhes. 
+Vimos exemplos da maioria destes conceitos utilizando o simulador `turtlesim`.
+Naturalmente, é bem incomum que o seu interesse inicial em ROS estivesse baseado
+em querer mover tartarugas imaginárias por aí. Se este livro cumpriu o seu papel, 
+você deve estar pronto para começar a usar o ROS — certamente com o auxílio da 
+documentação, e muito provavelmente com a ajuda dos pacotes existentes — para resolver
+problemas robóticos reais de seu interesse. 
+
