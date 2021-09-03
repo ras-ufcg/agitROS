@@ -16,4 +16,4 @@ Nos capítulos 2 e 3, focamos em como mensagens trafegam entre nós. Embora seja
 
 - Chamadas de serviço implementam a comunicação **um-a-um**. Cada serviço é iniciado por um nó, e a resposta volta para este mesmo nó. Em contrapartida, cada mensagem é associada com um tópico que pode ter vários publicadores e inscritos. 
 
-Apesar destas (muito importantes!) diferenças, serviços são similares a mensagens. Neste capítulo, veremos como inspecionar e chamar serviços a partir da linha de comando, e como escrever nós que agem tanto como clientes de serviço, quanto como servidores. 
+Apesar destas diferenças (muito importantes!), serviços são similares a mensagens. Neste capítulo, veremos como inspecionar e chamar serviços a partir da linha de comando, e como escrever nós que agem tanto como clientes de serviço, quanto como servidores. 
