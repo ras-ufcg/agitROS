@@ -12,6 +12,7 @@ O grupo *Academy Translate* objetiva trazer materiais educacionais sobre robóti
 
 1. [Python para todos](http://do1.dr-chuck.com/pythonlearn/PT_br/pythonlearn.pdf), Charles Severance
 2. [Robot Academy](https://robotacademy.net.au/), Peter Corke
+3. [KalmanFilter.net](https://www.kalmanfilter.net/PT/default_pt.aspx), Alex Becker
   
 ### Filosofia do grupo
 
