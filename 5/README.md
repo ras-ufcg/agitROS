@@ -13,9 +13,9 @@ nav_order: 6
 
 No capítulo 3, nós utilizamos strings chamadas "`hello_ros`" e "`publish_velocity`" para denominar
 nós e strings como "`turtle1/cmd_vel`" e "`turtle1/pose`" como nomes de tópicos.
-Todos esses são exemplos de **recursos de grafo**. ROS possui um sistema flexível para nomear que
+Todos esses são exemplos de nomes de **recursos de grafo**. O ROS possui um sistema flexível de nomeação que
 aceita diferentes tipos de nomes. (Esses quatro, por exemplo, são **nomes relativos**).
 
-Nesse capítulo, nós pegaremos um atalho para entender vários tipos de recursos de grafo para nomear,
-bem como ROS os decide. Nós apresentamos essas ideias, que são na verdade simples, em um
-capítulo separado porque elas são relevantes para a maioria dos conceitos da segunda metade deste livro.
+Nesse capítulo, nós pegaremos um atalho para entender vários tipos de nomes de recursos de grafo,
+bem como ROS os determina. Nós apresentamos essas ideias, que na verdade são simples, em um
+capítulo separado, porque elas são relevantes para a maioria dos conceitos da segunda metade deste livro.
