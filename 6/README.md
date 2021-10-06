@@ -5,7 +5,7 @@ has_children: true
 nav_order: 7
 ---
 
-# Arquivos de lançamento
+# Arquivos de inicialzação
 
 *Nos quais configuramos e executamos muitos nós de uma só vez usando arquivos de inicialização.*
 {: .fs-6 .fw-300 }
