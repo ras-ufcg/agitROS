@@ -38,8 +38,8 @@ Em todas as nossas atividades há especificação de uma *deadline*, com o intui
 | 2 | Começando                   | <img alt="formatado" src="https://img.shields.io/badge/-finalizado-brightgreen"> |  
 | 3 | Escrevendo programas no ROS | <img alt="formatado" src="https://img.shields.io/badge/-finalizado-brightgreen"> | 
 | 4 | Mensagens no log            | <img alt="formatado" src="https://img.shields.io/badge/-finalizado-brightgreen"> | 
-| 5 | Recursos de grafo           | <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> | 
-| 6 | Arquivos de `launch`        | <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> | 
+| 5 | Recursos de grafo           | <img alt="formatado" src="https://img.shields.io/badge/-finalizado-brightgreen"> | 
+| 6 | Arquivos de `launch`        | <img alt="formatado" src="https://img.shields.io/badge/-finalizado-brightgreen"> | 
 | 7 | Parâmetros                  | <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> |
 | 8 | Serviços                    | <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> |  
 | 9 | Gravando e reproduzindo uma mensagem | <img alt="revisão" src="https://img.shields.io/badge/-Em%20revisão-yellow"> | 
