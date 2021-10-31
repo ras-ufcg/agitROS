@@ -49,7 +49,7 @@ Em todas as nossas atividades há especificação de uma *deadline*, com o intui
 
 ### Licença 
 
-agitROS-PT/BR é registrado por &copy; 2021 RAS/UFCG Student Branch e Jason O'Kane. Essa versão em portugês é distribuída com [CC0 1.0 Universal license](https://github.com/ras-ufcg/agitROS/blob/main/LICENSE\).
+agitROS-PT/BR é registrado por &copy; 2021 RAS/UFCG Student Branch e Jason O'Kane. Essa versão em português é distribuída com [CC0 1.0 Universal license](https://github.com/ras-ufcg/agitROS/blob/main/LICENSE\).
 
 ### Contribuindo
 
