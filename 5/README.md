@@ -11,8 +11,7 @@ nav_order: 6
 *No qual nós aprendemos como ROS denomina nodes, tópicos, parâmetros e serviços.*
 {: .fs-6 .fw-300 }
 
-No capítulo 3, nós utilizamos strings chamadas "`hello_ros`" e "`publish_velocity`" para denominar
-nós e strings como "`turtle1/cmd_vel`" e "`turtle1/pose`" como nomes de tópicos.
+No [capítulo 3](https://ras-ufcg.github.io/agitROS/3/README.html), nós utilizamos strings chamadas `hello_ros` e `publish_velocity` para denominar nós e strings como `turtle1/cmd_vel` e `turtle1/pose` como nomes de tópicos.
 Todos esses são exemplos de nomes de **recursos de grafo**. O ROS possui um sistema flexível de nomeação que
 aceita diferentes tipos de nomes. (Esses quatro, por exemplo, são **nomes relativos**).
 
